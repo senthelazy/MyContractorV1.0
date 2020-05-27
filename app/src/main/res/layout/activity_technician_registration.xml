@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical"
+    tools:context="com.sen.mycontractor.technician.TechnicianRegistration">
+
+    <TextView
+        android:id="@+id/registerTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/technician_register_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/phoneInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerTv2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/getVerificationBtn2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneInput2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Get verification code"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/codeEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getVerificationBtn2"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Input the code"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/verifyCodeBtn2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeEt2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:text="Verify code"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/emailAutoTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerTv2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Email address"
+        android:inputType="textEmailSubject"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/passwordInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/passwordEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailAutoTv2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Create a password"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/confirmPasswordInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/confirmPasswordEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEt2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Confirm your password"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/fullNameInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/fullNameEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPasswordEt2"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Your full name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/companyNameEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullNameEt2"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="Company name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/cityNameEt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/companyNameEt2"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:hint="City name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/businessLicenseBtn2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cityNameEt2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:text="Upload business license"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/insuranceBtn2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businessLicenseBtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Upload contractor insurance"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/createAccountBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Create Account"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_create_account"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:visibility="invisible" />
+</RelativeLayout>

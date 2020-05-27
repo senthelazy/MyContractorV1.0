@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical"
+    tools:context="com.sen.mycontractor.customer.UploadDescription">
+
+    <TextView
+        android:id="@+id/uploadDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:text="@string/use_description_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_18" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line_width_height"
+        android:layout_below="@+id/uploadDescriptionText"
+        android:id="@+id/lineV"
+        android:background="@color/white" />
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineV"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click_dropdown"
+        android:popupBackground="@color/colorLightBlue"
+        android:dropDownWidth="310dp"
+        android:paddingLeft="20dp"/>
+
+    <Spinner
+        android:id="@+id/subCategorySpinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/categorySpinner"
+        android:background="@drawable/btn_click_dropdown"
+        android:paddingLeft="20dp"
+        android:dropDownWidth="310dp"
+        android:popupBackground="@color/colorLightBlue"/>
+
+    <EditText
+        android:id="@+id/jobDescriptionEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/subCategorySpinner"
+        android:gravity="top"
+        android:hint="@string/description_text"
+        android:maxLength="200"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="@dimen/textsize_16" />
+
+    <Button
+        android:id="@+id/useDescriptionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="@string/use_description_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="bold" />
+</RelativeLayout>

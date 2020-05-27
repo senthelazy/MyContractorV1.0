@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context="com.sen.mycontractor.customer.LocationDetermine">
+
+    <TextView
+        android:id="@+id/loginTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/action_sign_in_intent"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/loginTv"
+        android:text="@string/determine_location_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_18"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/location_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textV"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_24dp"
+        />
+    <TextView
+        android:id="@+id/currentLocationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textV"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/useLocationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="@string/use_location"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

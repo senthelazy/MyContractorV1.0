@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.sen.mycontractor.technician.SendEstimatePopup">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_18"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="@string/pop_up_estimate" />
+
+    <View
+        android:id="@+id/lineV1"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif"
+        android:layout_height="@dimen/dividing_line_width_height"
+        android:layout_below="@+id/textView4"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/containLl"
+        android:layout_below="@+id/lineV1"
+        android:fontFamily="sans-serif"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAD:"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Estimate amount"
+            android:fontFamily="sans-serif"
+            android:inputType="numberSigned"
+            android:imeOptions="actionUnspecified"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/containLl2"
+        android:layout_below="@+id/containLl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days:"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/timeEt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="How long you figure?"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/opinionEt"
+        android:layout_below="@+id/containLl2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="top"
+        android:fontFamily="sans-serif"
+        android:paddingRight="10dp"
+        android:hint="Enter your opinion or solution about the job"
+        android:maxLength="200"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_click"
+        android:text="Send to client"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

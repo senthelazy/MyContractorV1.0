@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical"
+    tools:context="com.sen.mycontractor.customer.UploadVideo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/upload_video_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_18"
+        android:id="@+id/uploadVideoText"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line_width_height"
+        android:layout_below="@+id/uploadVideoText"
+        android:id="@+id/lineV"
+        android:background="@color/white" />
+
+    <com.sen.mycontractor.customer.widget.FilterImageView
+        android:id="@+id/addVideoBtn"
+        android:layout_below="@+id/uploadVideoText"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add_video" />
+
+
+    <VideoView
+        android:id="@+id/mVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineV"
+        android:layout_above="@+id/useVideoBtn"/>
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineV"
+        android:layout_above="@+id/useVideoBtn"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/play" />
+
+
+    <Button
+        android:id="@+id/useVideoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="@string/next_step"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_18"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarForVideo"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

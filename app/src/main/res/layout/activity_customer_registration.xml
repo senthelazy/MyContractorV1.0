@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/welcome_background"
+    android:fontFamily="sans-serif"
+
+    tools:context="com.sen.mycontractor.customer.CustomerRegistration">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:text="@string/customer_register_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_18" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/phoneInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/getVerificationBtn"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneInput"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Get verification code"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getVerificationBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Input the code"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/verifyCodeBtn"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Verify code"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifyCodeBtn"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Email address"
+        android:inputType="textEmailSubject"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/passwordInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Create a password"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/confirmPasswordInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/confirmPasswordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInput"
+        android:layout_gravity="center"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Confirm your password"
+        android:inputType="textVisiblePassword"
+        android:maxLines="1"
+        android:nextFocusForward="@+id/fullNameInput"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/fullNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPasswordInput"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_input"
+        android:fontFamily="sans-serif"
+        android:hint="Your full name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/btn_click"
+        android:fontFamily="sans-serif"
+        android:text="Create Account"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_create_account"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:visibility="invisible" />
+</RelativeLayout>

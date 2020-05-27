@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/categoryForListTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="Category"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/categoryForListTv"
+            android:lines="3"
+            android:padding="10dp"
+            android:text="Description....................."
+            android:textColor="@color/colorWhite"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/to_the_right"/>
+
+        <TextView
+            android:id="@+id/subCategoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017 Aug 23"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/descriptionTv"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singleItemCv"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/padding_5"
+    android:layout_marginBottom="@dimen/padding_5"
+    android:layout_marginTop="@dimen/padding_5"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/padding_5"
+    android:transitionName="itemCardView"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tech_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Project ID Number:"
+            android:textColor="@color/blue_1"
+            android:textSize="@dimen/textsize_16"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tech_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:layout_toRightOf="@+id/tech_name_text"
+            android:textColor="@color/blue_1"
+            android:textSize="@dimen/textsize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/opinion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tech_name"
+            android:layout_marginRight="5dp"
+            android:lines="3"
+            android:padding="10dp"
+            android:text="opinion....................."
+            android:textColor="@color/colorBlack"
+            android:transitionName="@string/request_description_transition" />
+
+        <com.sen.mycontractor.customer.widget.FilterImageView
+            android:id="@+id/chevron_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_chevron_right_blue_24dp" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_10"
+            android:text="Will finish in "
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/time_text"
+            android:paddingLeft="@dimen/padding_5"
+            android:text="days"
+            android:textColor="@color/blue_1"
+            android:textStyle="italic"
+            android:textSize="@dimen/textsize_16"/>
+
+        <TextView
+            android:id="@+id/amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/time"
+            android:text=" days for Canadian dollars "
+            android:layout_alignTop="@+id/time" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/descriptionTv"
+            android:layout_toRightOf="@+id/amount_text"
+            android:text=""
+            android:textColor="@color/blue_1"
+            android:textStyle="italic"
+            android:textSize="@dimen/textsize_16"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

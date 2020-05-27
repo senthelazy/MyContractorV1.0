@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singleItemCv"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/padding_5"
+    android:layout_marginBottom="@dimen/padding_5"
+    android:layout_marginTop="@dimen/padding_5"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/padding_5"
+    android:transitionName="itemCardView"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/categoryForListTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="Category"
+            android:textColor="@color/blue_1"
+            android:textSize="@dimen/textsize_16"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/categoryForListTv"
+            android:layout_marginRight="5dp"
+            android:lines="3"
+            android:padding="10dp"
+            android:text="Description....................."
+            android:textColor="@color/colorBlack"
+            android:transitionName="@string/request_description_transition" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/estimatesLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contractor_photo"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/descriptionTv"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_30">
+
+            <com.sen.mycontractor.customer.widget.FilterImageView
+                android:id="@+id/estimates_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_estimates_blue_24dp" />
+
+            <TextView
+                android:id="@+id/estimates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_14"
+                android:layout_marginTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_5"
+                android:text="Estimates from contractors" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/detailsLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/estimatesLl"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/descriptionTv"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_20">
+
+            <com.sen.mycontractor.customer.widget.FilterImageView
+                android:id="@+id/details_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_detail_blue_24dp" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:paddingLeft="@dimen/padding_5"
+                android:textSize="@dimen/textsize_14"
+                android:text="Request details" />
+        </LinearLayout>
+
+
+
+
+        <com.sen.mycontractor.customer.widget.FilterImageView
+            android:id="@+id/location_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/descriptionTv"
+            android:src="@drawable/ic_location_blue_24dp" />
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/location_icon"
+            android:layout_toEndOf="@+id/location_icon"
+            android:paddingLeft="@dimen/padding_3"
+            android:text="Regina"
+            android:textColor="@color/blue_1"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tech_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/categoryForListTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/descriptionTv"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/descriptionTv"
+            android:text="" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

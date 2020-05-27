@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="horizontal"
+    tools:context="com.sen.mycontractor.common.RequestDetails">
+
+
+
+    <FrameLayout
+        android:id="@+id/pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.sen.mycontractor.customer.widget.AlbumViewPager
+            android:id="@+id/album_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/album_item_bg" />
+
+        <include
+            android:id="@+id/album_item_header_bar"
+            layout="@layout/album_item_header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/allDetailsRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sen.mycontractor.customer.widget.FilterImageView
+            android:id="@+id/backToAccountIb"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_arrow_back_24dp" />
+
+        <TextView
+            android:id="@+id/headerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/request_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerTv"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/padding_10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerTv"
+            android:layout_toRightOf="@+id/category"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/padding_10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/lineV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividing_line_width_height"
+            android:layout_below="@+id/descriptionSv"
+            android:background="@color/white" />
+
+        <ScrollView
+            android:id="@+id/descriptionSv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/headerTv"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/requestDescriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:paddingTop="@dimen/padding_5"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/photosSv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineV"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="@dimen/padding_10"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/photosLl"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_100"
+                android:fontFamily="sans-serif"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10">
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <VideoView
+            android:id="@+id/requestVV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/photosSv"
+            android:layout_above="@+id/create_estimate"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/playVideoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/photosSv"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/create_estimate"
+            android:fontFamily="sans-serif"
+            android:src="@drawable/play"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/create_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@drawable/btn_click"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentBottom="true"
+            android:text="create a estimate for this customer"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

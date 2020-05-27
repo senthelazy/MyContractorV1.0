@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">My Contractor</string>
+    <string-array name="categories">
+        <item>Home Improvement</item>
+        <item>Basement</item>
+        <item>Foundation</item>
+        <item>Exterior</item>
+        <item>Plumbing and Heating</item>
+        <item>Electrical</item>
+        <item>Concrete</item>
+        <item>Drywall</item>
+        <item>Interior Design</item>
+        <item>Windows Installation</item>
+        <item>Painting</item>
+        <item>Flooring</item>
+        <item>Landscaping</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="sub_categories">
+        <item>Single House</item>
+        <item>Duplex</item>
+        <item>Townhouse</item>
+        <item>Apartment</item>
+        <item>Condo</item>
+        <item>Commercial</item>
+        <item>Land</item>
+    </string-array>
+    <string name="title_activity_customer_account">CustomerAccount</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logged_in">Now your are logged in</string>
+    <string name="signed_in">Sign in successfully</string>
+    <string name="signed_fail">Sign in fail with credential</string>
+    <string name="title_activity_customer_login">Login</string>
+    <string name="select_status_text">Thank you for using My Contractor, please select one of the options that best describes you.</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in_intent">Got an account? Click here to sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_technician_account">TechnicianAccount</string>
+    <string name="hire_button">I would like to hire contractor</string>
+    <string name="beingHired_button">I am a contractor</string>
+    <string name="About">About | Contact us</string>
+    <string name="location_text">You are located in the city of</string>
+    <string name="use_location">Use This Location </string>
+    <string name="determine_location_text">Step 1, follow these simple steps to finish posting request,
+        or sign in if you already have an Customer account.</string>
+    <string name="upload_images_text">Step 2, Upload images of your job area,click next step button to skip.</string>
+    <string name="upload_video_text">Step 3, Upload video of your job area,click next step button to skip.</string>
+    <string name="use_images">Use These Images</string>
+    <string name="use_video">Use This Video</string>
+    <string name="next_step">Next Step</string>
+    <string name="upLoading">Uploading Images.....</string>
+    <string name="use_description_text">Step 4, Providing details of the job helps contractors to find out the problem.</string>
+    <string name="description_text">Provide details of your job here </string>
+    <string name="use_description_button">Complete This Request</string>
+    <string name="customer_register_text">Final step,simply finish this
+        registration form to get free estimation from contractors.</string>
+    <string name="register">Create a New Account</string>
+    <string name="my_requests_list">My Requests List</string>
+    <string name="request_details">Request Details</string>
+    <string name="request_description_transition">descriptionTransition</string>
+    <string name="requests_for_tech">Requests From Same Area</string>
+    <string name="pop_up_estimate">Provide Your Estimate to Customer</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="copied_message">Message copied!</string>
+    <string name="hint_enter_a_message">Type message here...</string>
+    <string name="contacts_list_title">Contacts List</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="my_requests">My Requests</string>
+    <string name="request_done">Requests done</string>
+    <string name="contractors_list">Contractors List</string>
+    <string name="technician_register_text">Register to access customers job request.</string>
+    <string name="estimates_from_tech_list">Estimates List for this Request</string>
+    <string name="my_estimates_list">Estimates Sent List</string>
+</resources>
